@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: rgba(252, 222, 184, 0.452);
+}
+
+body{
+    line-height: 2.0;
+    font-size: 1rem;
+    font-family: 'Zen Dots', cursive;
+    animation-name: pageopen;
+    animation-duration: 3s;
+    /* font-family: 'New Tegomin', serif; */
+    /* 1rem=16px */
+}
+/* Zoom the page from top */
+@keyframes pageopen {
+    1% {
+        transform-origin: top;
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Body of the webpage */
+.container{
+    width: 85%;
+    border: 3px solid grey;
+    border-block-start-color: aquamarine;
+    margin: auto;
+    /* display: flex; */
+    padding: 8px;
+    background-image: linear-gradient(rgba(103, 238, 103, 0.479), rgba(138, 203, 240, 0.253), rgba(241, 239, 100, 0.637));
+}
+/* Line separator */
+.separator{
+    padding: 5px;
+}
+/* Details and photo */
+.main_section{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 10%;
+    display: flex;
+    /* top:0;
+    position:sticky; */
+}
+/* Details block */
+.about_self{
+    /* border: 1px solid black; */
+    width: 70%;
+}
+/* Details list */
+.listing_order:hover{
+    transform: scale(1.5);
+    text-align: center;
+    width: 345px;
+    height: 80%;
+    margin-left: 80px;
+    padding-left: 14%;
+    margin-top: 1.3%;
+    background-color: transparent;
+    /* border: 1px solid black; */
+}
+.listing_order{
+    /* border: 1px solid black; */
+    list-style: none;
+    /* padding: 20px; */
+    padding: 5% 0 5% 2.5%;
+    width: 320px ;
+    height: 98%;
+    background-color: rgba(145, 243, 145, 0.267);
+}
+
+.photo{
+    /* border: 4px solid black; */
+    width: 30%;
+    /* height: 5%; */
+} 
+.img_adjust{
+    /* width: 80%; */
+    height: 160px;
+    /* CHECK   min-height: 100px; */
+    min-width: 90px;
+    /* padding-top: 10px; */
+}
+/* Skew photo on hover */
+.img_adjust:hover {
+    animation: skew 2s;
+    /* transform: skew(20deg); */
+    animation-direction: alternate;
+}
+@keyframes skew {
+    0% {
+        transform: skewX(20deg);
+    }
+    50% {
+        transform: skewX(-20deg);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+table, th, tr, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+tr, th{
+    padding: 0 10px 0 10px;
+}
+
+tr, td{
+    text-align: center;
+}
+.table_part{
+    display: flex;
+    justify-content: center;
+}
+
+.skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(231, 227, 193); */
+}
+/* Programming languages */
+.lang{
+    display: flex;
+}
+.lang div:first-child{
+    width: 40%;
+    padding-left: 20px;
+}
+.lang div:last-child{
+    width: 60%;
+}
+
+.progressbar{
+    width: 95%;
+}
+.fillprogress {
+    height: 20px;
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 20px;
+}
+.fillprogress > span {
+    display: block;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.spanfill {
+    /* border: 1px solid blue; */
+    /* background-image: linear-gradient( 90deg,
+    rgb(14, 82, 184) 37%,rgb(51, 109, 216),
+    rgb(136, 181, 233) 69% ); */ 
+    margin: 1px;
+    animation: fill 1s linear;
+    
+}
+/* Increases the progress bar from 0; 100%{...} is not included so that filling stops at specified value */
+@keyframes fill {
+    0% {
+        width: 0;
+    }
+}
+
+.personal_details{
+    width: 70%;
+    margin: auto;
+}
+
+.detail{
+    display: flex;
+}
+
+.detail div:first-child{
+    width: 40%;
+}
+
+.detail div:last-child{
+    width: 60%;
+}
+/* Zooms on hover */
+.zoom {
+    background-color: rgba(241, 239, 100, 0.39);  
+}
+.zoom:hover {
+    cursor:default;
+    transform: scale(1.5);
+    background-color:rgba(241, 240, 173, 0.548);
+    background-color: transparent;
+    margin-left: 20%;
+}
+
+/* Heading flies in from center */
+.headd {
+    animation: focus 4s;
+}
+@keyframes focus {
+    0% {
+        transform: scale(0);
+        /* transform-origin: left; */
+        margin: 0%;
+        padding: 0%;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Project heading blinks between colors */
+.blink {
+    animation: projectblink 2s infinite;
+}
+@keyframes projectblink {
+    0% {
+        color: rgba(218, 78, 23, 0.966);
+    }
+    50% {
+        color: rgb(207, 103, 103);
+    }
+    100% {
+        color: black;
+    }
+}
+
+li {
+    list-style-type: none;
+}

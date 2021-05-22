@@ -1,0 +1,186 @@
+@media only screen and (max-width:280px) {
+    html {
+        font-size: 0.4rem;
+    }
+    .img_adjust {
+        min-width: 55px;
+        height: 90px;
+    }
+    .photo {
+        width:30%;
+/*         border: 1px solid red; */
+    }
+    .about_self {
+        width:70%;
+/*         border: 1px solid magenta; */
+    }
+    .listing_order{
+/*         border: 1px solid blue; */
+        width: 100% ;
+    }
+    table, th, tr, td{
+    border: 0.01px solid black;
+    border-collapse: collapse;
+    overflow: hidden;
+    }
+    .personal_details {
+        width:100%;
+    }
+    .fillprogress {
+        height: 8px;
+        border: 1px solid black;
+        margin: 0px;
+    }
+    .spanfill {
+        margin: 0.2px;
+    }
+}
+
+
+@media only screen and (max-width:320px) and (min-width:281px) {
+    html {
+        font-size: 0.48rem;
+    }
+    .main_section {
+/*         border: 1px solid yellow; */
+        width:100%;
+    }
+
+    .about_self {
+        width:70%;
+/*         border: 1px solid red; */
+    }
+    .listing_order{
+        /* border: 1px solid black; */
+        width: 80% ;
+    }
+
+    .photo {
+        width:20%;
+        height: 100px;
+    } 
+    .img_adjust {
+        min-width: 50px;
+        height: 100px;
+    }
+    .personal_details {
+        width:100%;
+    }
+
+    .fillprogress {
+        height: 8px;
+        border: 1px solid black;
+        margin: 0px;
+    }
+    .spanfill {
+        margin: 0.2px;
+    }
+}
+
+@media only screen and (max-width:414px) and (min-width:321px) {
+    th, tr {
+        padding: 0;
+    }
+    
+/*     .listing_order {
+        padding: 0;
+    } */
+
+    .photo {
+        width:20%;
+        height: 100px;
+    } 
+
+    .img_adjust {
+        min-width: 50px;
+        height: 100px;
+    }
+
+    html {
+        font-size: 0.65rem;
+    }
+
+    .personal_details {
+        width:100%;
+    }
+    
+    .main_section {
+/*         border: 1px solid yellow; */
+        width:100%;
+    }
+
+    .about_self {
+        width:70%;
+        /* border: 1px solid red; */
+    }
+
+    .listing_order{
+        padding: 13% 0;
+/*         border: 1px solid black; */
+        width:fit-content;
+        background-color: rgba(145, 243, 145, 0.267);
+
+    }
+    /* .photo {
+         border: 1px solid black; 
+    } */
+
+    .fillprogress {
+        height: 12px;
+        border: 1px solid black;
+        margin: 5px;
+    }
+    .spanfill {
+        margin: 0.84374555px;
+    }
+} 
+
+@media only screen and (max-width:750px) and (min-width:415px) {
+
+    body {
+        font-size: 0.7rem;
+    }
+
+    .personal_details {
+        width:90%;
+    }
+
+    .listing_order{
+/*         border: 1px solid black; */
+        width: 80% ;
+        padding: 45px 17px;
+    }
+
+    .listing_order:hover{
+        /* border: 1px solid black; */
+        width: 60% ;
+        text-align: center;
+        padding: 30px 5px;
+    }
+    .fillprogress {
+        height: 15px;
+        border: 1px solid black;
+        margin: 5px;
+    }
+    .spanfill {
+        margin: 0.5px;
+    }
+}
+
+@media only screen and (max-width:824px) and (min-width:751px) {
+    .listing_order{
+                /* border: 1px solid black; */
+                width: 80% ;
+                padding: 45px 17px;
+            }
+        
+            .listing_order:hover{
+                /* border: 1px solid black; */
+                transform: scale(1.5);
+                width: 60% ;
+                text-align: center;
+                padding: 20px 5px 10px 6px;
+                font-size: 0.8rem;
+                margin-top: 6%;
+            }
+}
